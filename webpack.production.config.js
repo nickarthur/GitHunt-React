@@ -18,6 +18,10 @@ module.exports = {
       loader: 'babel',
       exclude: /node_modules/
     }, {
+      // https://github.com/apollographql/persistgraphql/issues/4
+      test: /node_modules\/apollo-client\/transport\/networkInterface\.js$/,
+      loader: 'babel'
+    },{
       test: /\.json$/,
       loader: 'json'
     }]

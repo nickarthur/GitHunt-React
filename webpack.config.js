@@ -11,6 +11,10 @@ module.exports = [
         test: /\.css/,
         loader: 'style!css'
       }, {
+        // https://github.com/apollographql/persistgraphql/issues/4
+        test: /node_modules\/apollo-client\/transport\/networkInterface\.js$/,
+        loader: 'babel'
+      }, {
         test: /\.js$/,
         loader: 'babel',
         exclude: /(node_modules)/
@@ -43,6 +47,11 @@ module.exports = [
           test: /\.js$/,
           loader: 'babel',
           exclude: /(node_modules)/
+        },
+        {
+          // https://github.com/apollographql/persistgraphql/issues/4
+          test: /node_modules\/apollo-client\/transport\/networkInterface\.js$/,
+          loader: 'babel'
         },
         {
           test: /\.json$/,
