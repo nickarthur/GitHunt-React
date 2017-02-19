@@ -2,6 +2,8 @@
 
 An example of a client-side app built with React and Apollo Client.
 
+See the application running live at [http://www.githunt.com](http://www.githunt.com).
+
 [![Get on Slack](https://img.shields.io/badge/slack-join-orange.svg)](http://www.apollostack.com/#slack)
 [![Build Status](https://travis-ci.org/apollostack/GitHunt-React.svg?branch=master)](https://travis-ci.org/apollostack/GitHunt-React)
 
@@ -28,7 +30,7 @@ npm install
 ### 4. Run the app
 
 ```
-npm start
+npm run dev
 ```
 
 - Open the client at http://localhost:3000
@@ -43,5 +45,5 @@ Click the green Submit button and add repo with the username/repo-name pattern.
 ![GitHunt App](screenshots/GitHunt-add.png)
 
 #### New Item
-Review the new item, up vote it and visit the repo via the link.   
+Review the new item, up vote it and visit the repo via the link.
 ![GitHunt App](screenshots/GitHunt-new.png)
