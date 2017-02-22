@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import { ApolloProvider } from 'react-apollo';
-import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws/dist/client';
+import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws';
 import * as ReactGA from 'react-ga';
 
 // Polyfill fetch
